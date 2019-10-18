@@ -35,7 +35,7 @@ public class IncomeCalcTest extends TestCase {
 	
 	@Test
 	public void testWeeklySalary() {
-		expected = 60000 / 52;
+		expected = emp.getIncome() / 52;
 		Mockito.when(mockObj.weeklySalary(emp)).thenReturn(emp.getIncome() / 52);
 		obj.setObjCalculator(mockObj);
 		
