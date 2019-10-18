@@ -18,7 +18,7 @@ public class IncomeCalcTest extends TestCase {
 		obj = new IncomeCalcImplementation();
 		mockObj = Mockito.mock(IIncomeCalculator.class);
 		
-		income = 64000;
+		//income = 52000;
 		emp = new Employee(income);
 	}
 	
