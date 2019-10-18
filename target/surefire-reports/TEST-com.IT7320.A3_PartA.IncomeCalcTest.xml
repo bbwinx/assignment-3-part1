@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.IT7320.A3_PartA.IncomeCalcTest" time="0.162" errors="0" skipped="0">
+<testsuite tests="4" failures="1" name="com.IT7320.A3_PartA.IncomeCalcTest" time="0.192" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12.0.1+12"/>
@@ -61,8 +61,16 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.IT7320.A3_PartA.IncomeCalcTest" name="testWeeklySalary" time="0.162"/>
-  <testcase classname="com.IT7320.A3_PartA.IncomeCalcTest" name="testComputeTax" time="0"/>
-  <testcase classname="com.IT7320.A3_PartA.IncomeCalcTest" name="testMonthlySalary" time="0"/>
+  <testcase classname="com.IT7320.A3_PartA.IncomeCalcTest" name="testMonthlySalary" time="0.181"/>
   <testcase classname="com.IT7320.A3_PartA.IncomeCalcTest" name="testKiwisaver" time="0"/>
+  <testcase classname="com.IT7320.A3_PartA.IncomeCalcTest" name="testWeeklySalary" time="0.011">
+    <failure message="expected:&lt;1153.0&gt; but was:&lt;769.2307692307693&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1153.0&gt; but was:&lt;769.2307692307693&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.IT7320.A3_PartA.IncomeCalcTest.testWeeklySalary(IncomeCalcTest.java:44)
+</failure>
+  </testcase>
+  <testcase classname="com.IT7320.A3_PartA.IncomeCalcTest" name="testComputeTax" time="0"/>
 </testsuite>

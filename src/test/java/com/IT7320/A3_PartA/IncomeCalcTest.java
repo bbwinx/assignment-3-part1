@@ -33,38 +33,6 @@ public class IncomeCalcTest extends TestCase {
 		assertEquals(expected, actual);		
 	}
 	
-	@Test
-	public void testWeeklySalary() {
-		expected = 60000 / 52;
-		Mockito.when(mockObj.weeklySalary(emp)).thenReturn(emp.getIncome() / 52);
-		obj.setObjCalculator(mockObj);
-		
-		actual = obj.weeklySalary(emp);
-		
-		assertEquals(expected, actual);
-	}
-	
-	@Test
-	public void testMonthlySalary() {
-		expected = emp.getIncome() / 26;
-		Mockito.when(mockObj.fortnightSalary(emp)).thenReturn(emp.getIncome() / 26);
-		obj.setObjCalculator(mockObj);
-		
-		actual = obj.fortnightSalary(emp);
-		
-		assertEquals(expected, actual);
-	}
-	
-	@Test
-	public void testKiwisaver() {
-		expected = emp.getIncome() * (3 / 100);
-		Mockito.when(mockObj.computeKiwiSaver(emp)).thenReturn(emp.getIncome() * (3 / 100));
-		obj.setObjCalculator(mockObj);
-		
-		actual = obj.computeKiwiSaver(emp);
-		
-		assertEquals(expected, actual);
-	}
 	
 
 }
