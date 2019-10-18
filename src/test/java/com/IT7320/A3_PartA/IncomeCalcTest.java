@@ -18,13 +18,13 @@ public class IncomeCalcTest extends TestCase {
 		obj = new IncomeCalcImplementation();
 		mockObj = Mockito.mock(IIncomeCalculator.class);
 		
-		//income = 52000;
+		income = 40000;
 		emp = new Employee(income);
 	}
 	
 	@Test
 	public void testComputeTax() {
-		expected = (30 / 100) * 5200;
+		expected = (30 / 100) * income;
 		Mockito.when(mockObj.computeTax(income)).thenReturn((30 / 100) * income);
 		obj.setObjCalculator(mockObj);
 		
@@ -35,7 +35,7 @@ public class IncomeCalcTest extends TestCase {
 	
 	@Test
 	public void testWeeklySalary() {
-		expected = emp.getIncome() / 52;
+		expected = 60000 / 52;
 		Mockito.when(mockObj.weeklySalary(emp)).thenReturn(emp.getIncome() / 52);
 		obj.setObjCalculator(mockObj);
 		
