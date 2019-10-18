@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.IT7320.A3_PartA.IncomeCalcTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec

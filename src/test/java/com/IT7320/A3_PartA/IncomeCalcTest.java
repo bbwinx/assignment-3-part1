@@ -24,7 +24,7 @@ public class IncomeCalcTest extends TestCase {
 	
 	@Test
 	public void testComputeTax() {
-		expected = (30 / 100) * income;
+		expected = (30 / 100) * 5200;
 		Mockito.when(mockObj.computeTax(income)).thenReturn((30 / 100) * income);
 		obj.setObjCalculator(mockObj);
 		
